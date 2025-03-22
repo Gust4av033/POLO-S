@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Delicias</title>
+    <link rel="stylesheet" href="Estilos/SMenu.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder">CD</div>
+                <span class="logo-text">Café & Delicias</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="Comidas.html">Comidas</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="postres.html">Postres</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal - Página de inicio -->
+    <main>
+        <!-- Carrusel -->
+        <section id="home">
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-item" style="background-image: url('/api/placeholder/800/500');">
+                        <div class="carousel-overlay">
+                            <h2>Disfruta del mejor café de especialidad</h2>
+                            <p>Granos selectos tostados a la perfección, preparados con pasión para despertar tus sentidos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/api/placeholder/800/500');">
+                        <div class="carousel-overlay">
+                            <h2>Delicias caseras recién horneadas</h2>
+                            <p>Nuestros postres son preparados diariamente con ingredientes frescos y naturales.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('/api/placeholder/800/500');">
+                        <div class="carousel-overlay">
+                            <h2>Comidas para satisfacer todos los gustos</h2>
+                            <p>Menú variado con opciones para todos, preparado con ingredientes de temporada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <div class="carousel-control" onclick="prevSlide()">&#10094;</div>
+                    <div class="carousel-control" onclick="nextSlide()">&#10095;</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados -->
+        <section id="featured">
+            <h2 class="section-title">Nuestros Destacados</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Café de Especialidad</h3>
+                        <p class="card-description">Nuestro blend signature tostado a la perfección, con notas de chocolate y frutos rojos.</p>
+                        <p class="card-price">$3.50</p>
+                        <a href="bebidas.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sandwich Gourmet</h3>
+                        <p class="card-description">Pan artesanal con proteína a elección, queso derretido y vegetales frescos.</p>
+                        <p class="card-price">$8.90</p>
+                        <a href="Comidas.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cheesecake de Frutos Rojos</h3>
+                        <p class="card-description">Base crocante, queso crema suave y cobertura de frutos rojos de temporada.</p>
+                        <p class="card-price">$5.50</p>
+                        <a href="postres.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#menu" class="btn">Ver Menú Completo</a>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section id="about">
+            <h2 class="section-title">Nuestro Café</h2>
+            <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p style="margin-bottom: 1rem;">En Café & Delicias nos apasiona ofrecer una experiencia única para nuestros clientes. Seleccionamos los mejores granos de café de productores responsables, tostados artesanalmente para resaltar sus cualidades.</p>
+                    <p style="margin-bottom: 1rem;">Nuestro menú está diseñado para satisfacer todos los paladares, con opciones frescas, saludables y deliciosas que cambian con las estaciones.</p>
+                    <p>Te invitamos a disfrutar de un ambiente acogedor, perfecto para compartir, trabajar o simplemente disfrutar de un momento de tranquilidad con la mejor compañía: una buena taza de café.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px; height: 300px; background-image: url('/api/placeholder/500/300'); background-size: cover; background-position: center; border-radius: 10px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Café & Delicias</h3>
+                <p>Ofreciendo lo mejor en café de especialidad, comidas frescas y postres caseros desde 2020.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 7:00 - 20:00</p>
+                <p>Sábados: 8:00 - 21:00</p>
+                <p>Domingos: 9:00 - 18:00</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Calle Principal hacia Rosario de Mora, a 100 metros abajo del Desvío.</p>
+                <p>Ciudad de Panchimalco</p>
+                <p>Tel: 123456789</p>
+                <p>Polo'sCafe@gmail..com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces</h3>
+                <a href="#">Menú para eventos</a>
+                <a href="#">Reservaciones</a>
+                <a href="#">Catering</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Polo's Garden & Café. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el carrusel y menú responsive -->
+    <script>
+        // Carrusel
+        let currentSlide = 0;
+        const carousel = document.getElementById('carousel');
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        // Inicializar carrusel
+        function startCarousel() {
+            updateCarousel();
+            // Auto-avance cada 5 segundos
+            setInterval(() => {
+                nextSlide();
+            }, 5000);
+        }
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        // Menú responsive
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Iniciar carrusel cuando se carga la página
+        window.onload = startCarousel;
+    </script>
+</body>
+</html>
