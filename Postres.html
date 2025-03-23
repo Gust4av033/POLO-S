@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo's Garden & Café</title>
+    <link rel="stylesheet" href="Estilos/SPostres.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder">CD</div>
+                <span class="logo-text">Polo's Garden & Café</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="comidas.html">Comidas</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="postres.html" class="active">Postres</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal - Página de postres -->
+    <main>
+        <section>
+            <div class="menu-header">
+                <h1>Nuestros Postres</h1>
+                <p>Deléitate con nuestra exquisita selección de postres caseros, elaborados con los ingredientes más frescos y las mejores técnicas de repostería.</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" onclick="filterItems('all')">Todos</button>
+                <button class="category-btn" onclick="filterItems('calientes')">Calientes</button>
+                <button class="category-btn" onclick="filterItems('frios')">Fríos</button>
+                <button class="category-btn" onclick="filterItems('tartas')">Tartas</button>
+                <button class="category-btn" onclick="filterItems('especialidades')">Especialidades</button>
+            </div>
+
+            <div id="menu-items-container">
+                <!-- Calientes -->
+                <div class="menu-item" data-category="calientes">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/1.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Affogato</span>
+                            <span class="menu-item-price">$4.90</span>
+                        </div>
+                        <p class="menu-item-description">Helado de vainilla bañado con un shot de espresso caliente y decorado con chocolate rallado.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Clásico Italiano</span>
+                            <span class="tag">Con Cafeína</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tartas -->
+                <div class="menu-item" data-category="tartas">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/2.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Cheesecake</span>
+                            <span class="menu-item-price">$5.50</span>
+                        </div>
+                        <p class="menu-item-description">Clásico cheesecake horneado con base de galleta, relleno cremoso y cobertura de mermelada casera.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Favorito</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="tartas">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/3.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Cheesecake de Frutos Rojos</span>
+                            <span class="menu-item-price">$6.90</span>
+                        </div>
+                        <p class="menu-item-description">Cheesecake cremoso con topping de coulis de frutos rojos frescos y decoración de frutas de temporada.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Especialidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fríos -->
+                <div class="menu-item" data-category="frios">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/4.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Mousse de Chocolate</span>
+                            <span class="menu-item-price">$5.90</span>
+                        </div>
+                        <p class="menu-item-description">Mousse aireado de chocolate belga, servido con crumble de cacao y virutas de chocolate negro.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="frios">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/6.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Mousse de Frutos Rojos</span>
+                            <span class="menu-item-price">$5.90</span>
+                        </div>
+                        <p class="menu-item-description">Ligero mousse de fresas, frambuesas y moras, sobre base de bizcocho y decorado con frutas frescas.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Ligero</span>
+                            <span class="tag">De Temporada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tartas -->
+                <div class="menu-item" data-category="tartas">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Pie de Limón</span>
+                            <span class="menu-item-price">$5.50</span>
+                        </div>
+                        <p class="menu-item-description">Tarta de masa quebrada con relleno cremoso de limón y merengue italiano flambeado.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Clásico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Especialidades -->
+                <div class="menu-item" data-category="especialidades">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Polito</span>
+                            <span class="menu-item-price">$4.50</span>
+                        </div>
+                        <p class="menu-item-description">Postre individual de masa choux relleno de crema pastelera y cubierto con glaseado de chocolate.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Especialidad de la Casa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="especialidades">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Torta de Banano</span>
+                            <span class="menu-item-price">$4.90</span>
+                        </div>
+                        <p class="menu-item-description">Esponjoso bizcocho con trozos de plátano, nueces y especias, cubierto con frosting de queso crema.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Casero</span>
+                            <span class="tag">Con Nueces</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Café & Delicias. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú responsive y filtro de categorías -->
+    <script>
+        // Menú responsive
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Filtrar items por categoría
+        function filterItems(category) {
+            const items = document.querySelectorAll('.menu-item');
+            const buttons = document.querySelectorAll('.category-btn');
+            
+            // Actualizar botones activos
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.textContent.toLowerCase().includes(category) || 
+                    (category === 'all' && button.textContent === 'Todos')) {
+                    button.classList.add('active');
+                }
+            });
+
+            // Mostrar/ocultar items según la categoría
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

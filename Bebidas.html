@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Polo's Garden & Café</title>
+    <link rel="stylesheet" href="Estilos/SBebidas.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder">PG</div>
+                <span class="logo-text">Polo's Garden & Café</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="comidas.html">Comidas</a></li>
+                <li><a href="bebidas.html" class="active">Bebidas</a></li>
+                <li><a href="postres.html">Postres</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal - Página de bebidas -->
+    <main>
+        <section>
+            <div class="menu-header">
+                <h1>Nuestras Bebidas</h1>
+                <p>Explora nuestra variedad de bebidas refrescantes, cafés especiales y tés naturales, preparados con los mejores ingredientes.</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" onclick="filterItems('all')">Todos</button>
+                <button class="category-btn" onclick="filterItems('cafes')">Cafés</button>
+                <button class="category-btn" onclick="filterItems('tes')">Tés</button>
+                <button class="category-btn" onclick="filterItems('jugos')">Jugos Naturales</button>
+                <button class="category-btn" onclick="filterItems('cocteles')">Cócteles</button>
+            </div>
+
+            <div id="menu-items-container">
+                <!-- Cafés -->
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Espresso</span>
+                            <span class="menu-item-price">$2.50</span>
+                        </div>
+                        <p class="menu-item-description">Café espresso intenso y aromático, preparado con granos de especialidad.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Cappuccino</span>
+                            <span class="menu-item-price">$3.90</span>
+                        </div>
+                        <p class="menu-item-description">Café espresso con leche espumada y un toque de cacao en polvo.</p>
+                    </div>
+                </div>
+
+                <!-- Tés -->
+                <div class="menu-item" data-category="tes">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Té Verde</span>
+                            <span class="menu-item-price">$2.80</span>
+                        </div>
+                        <p class="menu-item-description">Té verde orgánico, rico en antioxidantes y con un sabor suave y refrescante.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="tes">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Infusión de Frutas</span>
+                            <span class="menu-item-price">$3.50</span>
+                        </div>
+                        <p class="menu-item-description">Mezcla de frutas tropicales y hierbas aromáticas para una bebida revitalizante.</p>
+                    </div>
+                </div>
+
+                <!-- Jugos Naturales -->
+                <div class="menu-item" data-category="jugos">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Jugo de Naranja</span>
+                            <span class="menu-item-price">$4.00</span>
+                        </div>
+                        <p class="menu-item-description">Jugo 100% natural de naranjas recién exprimidas, sin azúcar añadida.</p>
+                    </div>
+                </div>
+
+                <!-- Cócteles -->
+                <div class="menu-item" data-category="cocteles">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Mojito</span>
+                            <span class="menu-item-price">$7.50</span>
+                        </div>
+                        <p class="menu-item-description">Refrescante cóctel de ron, menta, lima y soda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Polo's Garden & Café. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function filterItems(category) {
+            const items = document.querySelectorAll('.menu-item');
+            const buttons = document.querySelectorAll('.category-btn');
+
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.textContent.toLowerCase().includes(category) || category === 'all') {
+                    button.classList.add('active');
+                }
+            });
+
+            items.forEach(item => {
+                item.style.display = (category === 'all' || item.dataset.category === category) ? 'flex' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
