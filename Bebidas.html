@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Estilos/SBebidas.css">
 </head>
 <body>
-    <!-- Header con navegación -->
+    <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -126,24 +126,33 @@
         </div>
     </footer>
 
+    <!-- Funciones para filtrar en categorias y ocultar menú -->
     <script>
-        function toggleMenu() {
+        <!-- Función para alternar el menú en dispositivos móviles -->
+        function toggleMenu() 
+        {
             const navLinks = document.getElementById('navLinks');
             navLinks.classList.toggle('active');
         }
 
-        function filterItems(category) {
+
+        // Función para filtrar los elementos del menú según la categoría seleccionada
+        function filterItems(category) 
+        {
             const items = document.querySelectorAll('.menu-item');
             const buttons = document.querySelectorAll('.category-btn');
 
-            buttons.forEach(button => {
+            buttons.forEach(button => 
+            {
                 button.classList.remove('active');
-                if (button.textContent.toLowerCase().includes(category) || category === 'all') {
+                if (button.textContent.toLowerCase().includes(category) || category === 'all') 
+                {
                     button.classList.add('active');
                 }
             });
 
-            items.forEach(item => {
+            items.forEach(item => 
+            {
                 item.style.display = (category === 'all' || item.dataset.category === category) ? 'flex' : 'none';
             });
         }
