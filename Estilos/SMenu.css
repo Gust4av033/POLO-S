@@ -1,9 +1,9 @@
 /* Estilos para el menú */
 :root {
-    --color-primary: #5D4037;
-    --color-secondary: #8D6E63;
+    --color-primary: #4c583e;
+    --color-secondary: #2c3424;
     --color-accent: #FFCCBC;
-    --color-background: #FFF8E1;
+    --color-background: #daded8;
     --color-text: #3E2723;
     --color-light: #FFFFFF;
 }
