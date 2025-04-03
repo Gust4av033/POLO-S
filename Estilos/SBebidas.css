@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #8B4513; /* Marrón oscuro para bebidas categorias y contenedor principal */
-    --color-secondary: #D2691E; /* Marrón claro ara el precio de los productos*/
+    --color-primary: #4c583e; /* Marrón oscuro para bebidas categorias y contenedor principal */
+    --color-secondary: #2c3424; /* Marrón claro ara el precio de los productos*/
     --color-accent: #FFE4C4; /* Beige */
-    --color-background: #FFF8E1; /* Fondo claro toda la página */
+    --color-background: #daded8; /* Fondo claro toda la página */
     --color-text: #3E2723; /* Texto marrón oscuro para descripción de productos */
     --color-light: #FFFFFF; /* Blanco para los contenedores de los productos*/
 }
