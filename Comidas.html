@@ -41,7 +41,7 @@
                 <button class="category-btn active" onclick="filterItems('all')">Todos</button>
                 <button class="category-btn" onclick="filterItems('desayunos')">Desayunos</button>
                 <button class="category-btn" onclick="filterItems('sandwiches')">Sandwiches</button>
-                <button class="category-btn" onclick="filterItems('ensaladas')">Ensaladas</button>
+                <button class="category-btn" onclick="filterItems('Almuerzo')">Almuerzos</button>
                 <button class="category-btn" onclick="filterItems('platos-fuertes')">Platos Fuertes</button>
             </div>
 
@@ -51,13 +51,15 @@
                     <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
-                            <span>Tostadas de Aguacate</span>
-                            <span class="menu-item-price">$6.50</span>
+                            <span>Desayuno Americano</span>
+                            <span class="menu-item-price">$5.50</span>
                         </div>
-                        <p class="menu-item-description">Pan artesanal tostado, aguacate machacado, huevo pochado, semillas de girasol y queso feta desmenuzado.</p>
+                        <p class="menu-item-description">Desayuno americano clásico con dos tostadas con queso americano derretido, 
+                            huevos revueltos y frutas frescas. Una combinación perfecta de sabores reconfortantes y nutrientes esenciales
+                            para comenzar tu día con energía y vitalidad.</p>
                         <div class="menu-item-tags">
-                            <span class="tag">Vegetariano</span>
-                            <span class="tag">Opción Vegana</span>
+                            <span class="tag">Americano</span>
+                            <span class="tag">Proteina</span>
                         </div>
                     </div>
                 </div>
@@ -66,12 +68,78 @@
                     <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
-                            <span>Bowl de Yogurt y Granola</span>
-                            <span class="menu-item-price">$5.90</span>
+                            <span>Copa de Frutas</span>
+                            <span class="menu-item-price">$4.50</span>
                         </div>
-                        <p class="menu-item-description">Yogurt griego, granola casera, frutas frescas de temporada y miel de abeja pura.</p>
+                        <p class="menu-item-description">Despierta con una copa de frutas frescas,
+                            granola crujiente y la opción entre miel dorada o mermelada de fresa.
+                            Una combinación deliciosa y nutritiva para empezar el día con energía.</p>
                         <div class="menu-item-tags">
                             <span class="tag">Vegetariano</span>
+                            <span class="tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desayunos">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Tostadas Francesas</span>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-description">Pan remojado en huevo y canela, dorado y servido con miel de abeja para un dulzor natural.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Vegetariano</span>
+                            <span class="tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desayunos">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Desayuno Tipico</span>
+                            <span class="menu-item-price">$7.00</span>
+                        </div>
+                        <p class="menu-item-description">Plato típico: Frijoles refritos, huevos, crema, plátanos fritos y pan tostado. 
+                            Una mezcla deliciosa de sabores y texturas que te transportará a la cocina tradicional.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Casero</span>
+                            <span class="tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desayunos">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Pancakes</span>
+                            <span class="menu-item-price">$5.25</span>
+                        </div>
+                        <p class="menu-item-description">Disfruta de nuestros esponjosos pancakes acompañados de una selección de frutas frescas y
+                            la opción de miel dorada o mermelada de fresa.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Americano</span>
+                            <span class="tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desayunos">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Panini de Huevo</span>
+                            <span class="menu-item-price">$6.00</span>
+                        </div>
+                        <p class="menu-item-description">Deléitate con nuestro panini relleno de aguacate, 
+                            torta de huevo, jamón, queso y lechuga, acompañado de frutas frescas, café caliente y jugo de naranja.
+                             Una combinación vibrante y nutritiva para comenzar tu día..</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Americano</span>
                             <span class="tag">Sin Gluten</span>
                         </div>
                     </div>
@@ -82,12 +150,14 @@
                     <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
-                            <span>Sándwich de Pollo Gourmet</span>
-                            <span class="menu-item-price">$8.90</span>
+                            <span>Panini de Pollo</span>
+                            <span class="menu-item-price">$5.00</span>
                         </div>
-                        <p class="menu-item-description">Pan ciabatta, pollo a la plancha, queso gouda, aguacate, tomate, lechuga y nuestra salsa especial.</p>
+                        <p class="menu-item-description">Pechuga al BBQ, queso fundido, verduras frescas y mayonesa, 
+                            servido en un pan crujiente y dorado acompañado con papas fritas.</p>
                         <div class="menu-item-tags">
                             <span class="tag">Favorito</span>
+                            <span class="tag">Sandwiches</span>
                         </div>
                     </div>
                 </div>
@@ -96,18 +166,49 @@
                     <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
-                            <span>Wrap Mediterráneo</span>
-                            <span class="menu-item-price">$7.50</span>
+                            <span>Panini de Jamón y Queso</span>
+                            <span class="menu-item-price">$5.50</span>
                         </div>
-                        <p class="menu-item-description">Tortilla de trigo, hummus, vegetales asados, aceitunas, queso feta y aderezo de yogurt.</p>
+                        <p class="menu-item-description">Rebanadas de jamón, queso fundido y verduras frescas en un pan crujiente dorado acompañado con papas fritas.</p>
                         <div class="menu-item-tags">
-                            <span class="tag">Vegetariano</span>
+                            <span class="tag">Sandwiches</span>
+                            <span class="tag">Americano</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Ensaladas -->
-                <div class="menu-item" data-category="ensaladas">
+                <div class="menu-item" data-category="sandwiches">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Panini de Res</span>
+                            <span class="menu-item-price">$6.25</span>
+                        </div>
+                        <p class="menu-item-description">Carne al BBQ, queso fundido, frescas verduras y mayonesa, en un crujiente pan dorado acompañado con papas fritas.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Sandwiches</span>
+                            <span class="tag">Americano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sandwiches">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Sandwich de Jamón</span>
+                            <span class="menu-item-price">$4.00</span>
+                        </div>
+                        <p class="menu-item-description">Jamón, queso derretido y verduras frescas en pan tierno y tostado acompañado con papas fritas.</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Sandwiches</span>
+                            <span class="tag">Americano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Almuerzos -->
+                <div class="menu-item" data-category="Almuerzo">
                     <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
@@ -121,7 +222,7 @@
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="ensaladas">
+                <div class="menu-item" data-category="Almuerzo">
                     <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
