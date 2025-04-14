@@ -40,7 +40,7 @@
             <div class="menu-categories">
                 <button class="category-btn active" onclick="filterItems('all')">Todos</button>
                 <button class="category-btn" onclick="filterItems('cafes')">Cafés</button>
-                <button class="category-btn" onclick="filterItems('tes')">Tés</button>
+                <button class="category-btn" onclick="filterItems('Bebidas Frías')">Bebidas Frías</button>
                 <button class="category-btn" onclick="filterItems('jugos')">Jugos Naturales</button>
                 <button class="category-btn" onclick="filterItems('cocteles')">Cócteles</button>
             </div>
@@ -48,47 +48,167 @@
             <div id="menu-items-container">
                 <!-- Cafés -->
                 <div class="menu-item" data-category="cafes">
-                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHOCOLATE\ MOUSSE.jpg);"></div>     
                     <div class="menu-item-content">
                         <div class="menu-item-title">
                             <span>Espresso</span>
-                            <span class="menu-item-price">$2.50</span>
+                            <span class="menu-item-price">Sencillo $2.00</span>
+                            <span class="menu-item-price">Doble $2.50</span>
                         </div>
-                        <p class="menu-item-description">Café espresso intenso y aromático, preparado con granos de especialidad.</p>
+                        <p class="menu-item-description">Un cafecito corto, fuerte y directo al grano. Perfecto para despertar los sentidos en un solo sorbo.</p>
                     </div>
                 </div>
 
                 <div class="menu-item" data-category="cafes">
-                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHEESECAKE.jpg);"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
                             <span>Cappuccino</span>
-                            <span class="menu-item-price">$3.90</span>
+                            <span class="menu-item-price">Sencillo $2.00</span>
+                            <span class="menu-item-price">Doble $2.50</span>
                         </div>
-                        <p class="menu-item-description">Café espresso con leche espumada y un toque de cacao en polvo.</p>
+                        <p class="menu-item-description">Espuma cremosa, café suave y un toque delicioso de sabor que lo hace aún más irresistible. Ideal para darte un gusto a cualquier hora.</p>
                     </div>
                 </div>
 
-                <!-- Tés -->
-                <div class="menu-item" data-category="tes">
-                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHEESECAKE.jpg);"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
-                            <span>Té Verde</span>
-                            <span class="menu-item-price">$2.80</span>
+                            <span>Americano</span>
+                            <span class="menu-item-price">Sencillo $1.50</span>
+                            <span class="menu-item-price">Doble $2.25</span>
                         </div>
-                        <p class="menu-item-description">Té verde orgánico, rico en antioxidantes y con un sabor suave y refrescante.</p>
+                        <p class="menu-item-description">"Suave, ligero y con ese saborcito que acompaña bien cualquier momento. El clásico de todos los días, sin complicaciones."</p>
                     </div>
                 </div>
 
-                <div class="menu-item" data-category="tes">
-                    <div class="menu-item-img" style="background-image: url('/api/placeholder/400/300');"></div>
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHEESECAKE.jpg);"></div>
                     <div class="menu-item-content">
                         <div class="menu-item-title">
-                            <span>Infusión de Frutas</span>
+                            <span>Latte</span>
+                            <span class="menu-item-price">$3.75</span>
+                        </div>
+                        <p class="menu-item-description">Café con leche al estilo pro: suave, cremoso y con ese toquecito que abraza el alma. Perfecto para relajarte y disfrutar.</p>
+                    </div>
+                </div>
+
+                
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHEESECAKE.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Latte</span>
+                            <span class="menu-item-price">$2.25</span>
+                        </div>
+                        <p class="menu-item-description">Un espresso con actitud, manchado con un toque de leche. Chiquito pero con carácter, ideal pa’ los que quieren café con estilo.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHEESECAKE.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Flat White</span>
+                            <span class="menu-item-price">$2.75</span>
+                        </div>
+                        <p class="menu-item-description">Como un latte, pero con más punch. Suave, cremoso y con el espresso brillando al frente. Perfecto si querés algo equilibrado pero con personalidad.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cafes">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/CHEESECAKE.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Irlandes</span>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-description">Café intenso con un toque de whisky irlandés y crema suave. Un cafecito con actitud, perfecto para esos momentos de relax con un toque de calor.</p>
+                    </div>
+                </div>
+
+                <!-- Bebidas Frias -->
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Americano Frío</span>
+                            <span class="menu-item-price">Sencillo $2.25</span>
+                            <span class="menu-item-price">Doble $2.75</span>
+                        </div>
+                        <p class="menu-item-description">Café suave y refrescante, servido en frío para esos días en los que el calor aprieta pero las ganas de café no se van.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Frapé</span>
+                            <span class="menu-item-price">Sencillo $2.75</span>
+                            <span class="menu-item-price">Doble $3.50</span>
+                        </div>
+                        <p class="menu-item-description">Café frío, cremoso y lleno de sabor. Ideal para disfrutar con hielo y darle ese toque refrescante a tu día.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Frapuccino</span>
+                            <span class="menu-item-price">Sencillo $3.00</span>
+                            <span class="menu-item-price">Doble $3.75</span>
+                        </div>
+                        <p class="menu-item-description">Café, hielo y un toque de dulzura, todo mezclado en un solo vaso. Perfecto para disfrutar de un café frío con mucha personalidad y sabor.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Irlandes</span>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-description">Café con un toque de whisky irlandés, servido bien frío y con una crema suave encima. Una mezcla perfecta para los que buscan algo refrescante con carácter.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Frapuccino</span>
+                            <span class="menu-item-price">Sencillo $3.00</span>
+                            <span class="menu-item-price">Doble $3.75</span>
+                        </div>
+                        <p class="menu-item-description">Café frío con leche cremosa y ese toque suave que refresca y despierta al mismo tiempo. El balance perfecto entre energía y frescura. 
+                            Con sus sabores: Vainilla, Oreo, Chocolate, Caramelo, Menta, Amareto</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Strawberry Ice Latte</span>
+                            <span class="menu-item-price">$3.75</span>
+                        </div>
+                        <p class="menu-item-description"> Café helado con leche y fresas frescas, una deliciosa mezcla refrescante para disfrutar en cualquier momento.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="Bebidas Frías">
+                    <div class="menu-item-img" style="background-image: url(Imagenes/Postres/TORTA_DE_BANANO.jpg);"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <span>Americano Orange</span>
                             <span class="menu-item-price">$3.50</span>
                         </div>
-                        <p class="menu-item-description">Mezcla de frutas tropicales y hierbas aromáticas para una bebida revitalizante.</p>
+                        <p class="menu-item-description"> CUn giro vibrante al clásico americano, infusionado con un toque de frescura cítrica de naranja,
+                            ofreciendo una experiencia refrescante y estimulante en cada sorbo.</p>
                     </div>
                 </div>
 
