@@ -69,6 +69,12 @@ header {
     color: var(--color-primary);
 }
 
+.logo-image {
+    width: 100%; /* Make the image try to take full width of the container */
+    height: 100%; /* Make the image try to take full height of the container */
+    object-fit: contain; /* Scale the image down to fit within the container, preserving aspect ratio */
+}
+
 .nav-links {
     display: flex;
     list-style: none;

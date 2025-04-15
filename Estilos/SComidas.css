@@ -1,4 +1,4 @@
-/* SPostres.css - Estilos específicos para la página de postres */
+/* SComida.css - Estilos específicos para la página de comidas */
 
 /* Estilos del encabezado del menú */
 .menu-header {
@@ -49,25 +49,6 @@
     font-weight: 500;
 }
 
-/* Efecto especial para postres */
-.postre-special {
-    position: relative;
-    overflow: hidden;
-}
-
-.postre-special::after {
-    content: '⭐ Especialidad';
-    position: absolute;
-    top: 10px;
-    right: -30px;
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-    padding: 0.25rem 1.5rem;
-    transform: rotate(45deg);
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .menu-header {
@@ -86,11 +67,6 @@
     .card-body {
         padding: 1rem;
     }
-    
-    .postre-special::after {
-        font-size: 0.7rem;
-        right: -35px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -100,10 +76,5 @@
     
     .menu-item .col-md-5 {
         height: 200px;
-    }
-    
-    .postre-special::after {
-        right: -25px;
-        padding: 0.2rem 1rem;
     }
 }
