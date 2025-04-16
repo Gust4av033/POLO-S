@@ -60,19 +60,21 @@
 
                 <div class="menu-categories d-flex justify-content-center flex-wrap gap-2 mb-5">
                     <button class="category-btn active" onclick="filterItems('all')">Todos</button>
-                    <button class="category-btn" onclick="filterItems('cafes')">Cafés</button>
-                    <button class="category-btn" onclick="filterItems('Café Fríos')">Café Fríos</button>
-                    <button class="category-btn" onclick="filterItems('Métodos')">Métodos</button>
-                    <button class="category-btn" onclick="filterItems('Bebidas sin Café')">Bebidas sin Café</button>            
+                    <button class="category-btn" onclick="filterItems('cafes-calientes')">Cafés Calientes</button>
+                    <button class="category-btn" onclick="filterItems('cafes-frios')">Cafés Fríos</button>
+                    <button class="category-btn" onclick="filterItems('metodos')">Métodos</button>
+                    <button class="category-btn" onclick="filterItems('sin-cafe')">Sin Café</button>
+                    <button class="category-btn" onclick="filterItems('cocteles')">Cócteles</button>
+                    <button class="category-btn" onclick="filterItems('smoothies')">Smoothies</button>
                 </div>
 
                 <div class="row g-4" id="menu-items-container">
-                    <!-- Cafés -->
-                    <div class="col-lg-6 menu-item" data-category="cafes">
+                    <!-- Café Caliente -->
+                    <div class="col-lg-6 menu-item" data-category="cafes-calientes">
                         <div class="card h-100 card-hover-effect">
                             <div class="row g-0">
                                 <div class="col-md-5">
-                                    <img src="Imagenes/Postres/CHEESECAKE.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Espresso">
+                                    <img src="Imagenes/Bebidas/espresso.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Espresso">
                                 </div>
                                 <div class="col-md-7">
                                     <div class="card-body">
@@ -94,15 +96,184 @@
                         </div>
                     </div>
 
-                    <!-- Más elementos de menú con la misma estructura -->
-                    <!-- Solo muestro uno como ejemplo, pero deberías incluir todos los elementos del menú original -->
-                    
-                    <!-- Bebidas sin Café -->
-                    <div class="col-lg-6 menu-item" data-category="Bebidas sin Café">
+                    <div class="col-lg-6 menu-item" data-category="cafes-calientes">
                         <div class="card h-100 card-hover-effect">
                             <div class="row g-0">
                                 <div class="col-md-5">
-                                    <img src="Imagenes/Postres/CHEESECAKE.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Limonada Natural">
+                                    <img src="Imagenes/Bebidas/cappuccino.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Cappuccino">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Cappuccino</h5>
+                                            <div>
+                                                <span class="text-primary fw-bold">Sencillo $2.75</span>
+                                                <span class="text-primary fw-bold ms-2">Doble $3.50</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Perfecto balance de espresso, leche vaporizada y espuma cremosa. Disponible con sabores: vainilla, caramelo, chocolate, oreo, menta o amaretto.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                            <span class="badge bg-light text-primary">Personalizable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cafes-calientes">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/americano.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Americano">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Americano</h5>
+                                            <div>
+                                                <span class="text-primary fw-bold">Sencillo $2.00</span>
+                                                <span class="text-primary fw-bold ms-2">Doble $2.50</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Espresso diluido en agua caliente para una experiencia de café más suave pero igualmente aromática.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Simple</span>
+                                            <span class="badge bg-light text-primary">Versátil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Café Frío -->
+                    <div class="col-lg-6 menu-item" data-category="cafes-frios">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/cold-brew.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Cold Brew">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Cold Brew</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Café preparado en frío durante 12 horas para extraer sabores suaves y menos ácidos. Perfecto para días calurosos.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                            <span class="badge bg-light text-primary">Suave</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cafes-frios">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/frappe.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Frappé">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Frappé</h5>
+                                            <span class="text-primary fw-bold">$4.50</span>
+                                        </div>
+                                        <p class="card-text">Café helado batido con hielo y leche, creando una textura espumosa y refrescante. Disponible en varios sabores.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Helado</span>
+                                            <span class="badge bg-light text-primary">Cremoso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cafes-frios">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/ice-latte.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Ice Latte">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Ice Latte</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Espresso con leche fría y hielo, perfectamente balanceado. Sabores disponibles: vainilla, caramelo, chocolate, oreo, menta o amaretto.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                            <span class="badge bg-light text-primary">Personalizable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Métodos -->
+                    <div class="col-lg-6 menu-item" data-category="metodos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/chemex.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Chemex">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Chemex</h5>
+                                            <div>
+                                                <span class="text-primary fw-bold">Sencillo $4.00</span>
+                                                <span class="text-primary fw-bold ms-2">Doble $5.00</span>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Método de preparación que produce un café limpio y brillante con un cuerpo medio y sabores complejos.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Artesanal</span>
+                                            <span class="badge bg-light text-primary">Especialidad</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="metodos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/aeropress.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Aeropress">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Aeropress</h5>
+                                            <span class="text-primary fw-bold">$4.50</span>
+                                        </div>
+                                        <p class="card-text">Método de inmersión que produce un café suave y con cuerpo en poco tiempo, resaltando los sabores más puros del grano.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Rápido</span>
+                                            <span class="badge bg-light text-primary">Intenso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sin Café -->
+                    <div class="col-lg-6 menu-item" data-category="sin-cafe">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/limonada.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Limonada Natural">
                                 </div>
                                 <div class="col-md-7">
                                     <div class="card-body">
@@ -110,10 +281,358 @@
                                             <h5 class="card-title mb-0">Limonada Natural</h5>
                                             <span class="text-primary fw-bold">$2.75</span>
                                         </div>
-                                        <p class="card-text">Refrescante limonada preparada con jugo de limón natural, agua purificada y el toque justo de dulzor. Perfecta para acompañar cualquier momento con frescura y sabor casero.</p>
+                                        <p class="card-text">Refrescante limonada preparada con jugo de limón natural, agua purificada y el toque justo de dulzor. Variantes disponibles: con hierbabuena, fresa, menta, soda o frutos rojos.</p>
                                         <div class="d-flex flex-wrap gap-2">
                                             <span class="badge bg-light text-primary">Refrescante</span>
                                             <span class="badge bg-light text-primary">Natural</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cócteles -->
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/screwdriver.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Screwdriver">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Screwdriver</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Una mezcla refrescante de vodka y jugo de naranja, perfecta para cualquier momento del día. Disfruta de su vibrante sabor cítrico que te revitalizará con cada sorbo.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/cuba-libre.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Cuba Libre">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Cuba Libre</h5>
+                                            <span class="text-primary fw-bold">$5.00</span>
+                                        </div>
+                                        <p class="card-text">Fusión de ron dorado, cola y un toque de lima para crear una experiencia refrescante y llena de sabor, ideal para transportarte a las playas tropicales con cada sorbo.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Tropical</span>
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/mojito.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Mojito">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Mojito</h5>
+                                            <span class="text-primary fw-bold">$5.00</span>
+                                        </div>
+                                        <p class="card-text">Preparado con ron blanco, hierbabuena fresca, lima, azúcar y soda. Ofrece una experiencia refrescante y vibrante. Sumérgete en la frescura de este clásico favorito.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/tom-collins.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Tom Collins">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Tom Collins</h5>
+                                            <span class="text-primary fw-bold">$5.00</span>
+                                        </div>
+                                        <p class="card-text">Una explosión refrescante de ginebra, jugo de limón, jarabe de azúcar y soda, perfecto para cualquier ocasión.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/michelada.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Michelada Polo's">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Michelada Polo's</h5>
+                                            <span class="text-primary fw-bold">$4.50</span>
+                                        </div>
+                                        <p class="card-text">Nuestra Michelada artesanal combina cerveza, jugo de limón, mermelada de tamarindo, Tajín y una pizca de salsa picante. Una explosión de sabores refrescantes.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Especialidad</span>
+                                            <span class="badge bg-light text-primary">Picante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/fresa-fizz.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Fresa Fizz">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Fresa Fizz</h5>
+                                            <span class="text-primary fw-bold">$5.00</span>
+                                        </div>
+                                        <p class="card-text">Explosión refrescante de fresas maceradas, vodka y soda mineral. Cada sorbo te transporta a la brisa veraniega, mientras disfrutas de la vibrante frescura de las fresas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Frutal</span>
+                                            <span class="badge bg-light text-primary">Refrescante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/apple-martini.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Apple Martini">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Apple Martini</h5>
+                                            <span class="text-primary fw-bold">$4.50</span>
+                                        </div>
+                                        <p class="card-text">Fusión de vodka, licor de manzana verde y triple sec, con un toque de frescura añadido por la piel de naranja. Sofisticado y refrescante.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Elegante</span>
+                                            <span class="badge bg-light text-primary">Frutal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/negroni.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Negroni">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Negroni</h5>
+                                            <span class="text-primary fw-bold">$7.00</span>
+                                        </div>
+                                        <p class="card-text">Equilibrio perfecto entre la amargura del Campari, la profundidad de la ginebra y la dulzura del vermut rojo, realizado con un toque de naranja. Sofisticado y cautivador.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                            <span class="badge bg-light text-primary">Premium</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cocteles">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/minuta.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="La Minuta de Polo">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">La Minuta de Polo</h5>
+                                            <span class="text-primary fw-bold">$5.00</span>
+                                        </div>
+                                        <p class="card-text">Una creación galardonada que captura la esencia de una auténtica minuta de limón. Creada por nuestro bartender premiado, esta deliciosa mezcla es tan sutil que apenas notarás el vodka. Sumérgete en esta experiencia única y refrescante.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Especialidad</span>
+                                            <span class="badge bg-light text-primary">Premiado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smoothies -->
+                    <div class="col-lg-6 menu-item" data-category="smoothies">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/frozen-coco.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Frozen de Coco">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Frozen de Coco</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Deliciosa mezcla helada de coco cremoso que te transporta a una playa tropical con cada sorbo.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Tropical</span>
+                                            <span class="badge bg-light text-primary">Cremoso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="smoothies">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/smoothie-frutos.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Smoothie de Frutos Rojos">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Smoothie de Frutos Rojos</h5>
+                                            <span class="text-primary fw-bold">$4.75</span>
+                                        </div>
+                                        <p class="card-text">Mezcla refrescante de fresas, frambuesas y moras con yogurt natural. Rico en antioxidantes y vitaminas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Saludable</span>
+                                            <span class="badge bg-light text-primary">Antioxidante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nuevas Bebidas -->
+                    <div class="col-lg-6 menu-item" data-category="cafes-frios">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/americano-orange.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Americano Orange">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Americano Orange</h5>
+                                            <span class="text-primary fw-bold">$3.75</span>
+                                        </div>
+                                        <p class="card-text">Nueva versión del Americano con un toque cítrico de naranja que realza los sabores del café.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Novedad</span>
+                                            <span class="badge bg-light text-primary">Cítrico</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cafes-frios">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/matcha-foam.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Matcha Foam Ice Latte">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Matcha Foam Ice Latte</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Café frío coronado con una espuma de matcha que crea un contraste de sabores único y refrescante.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Fusión</span>
+                                            <span class="badge bg-light text-primary">Innovador</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="cafes-frios">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/strawberry-matcha.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Strawberry Matcha Ice Latte">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Strawberry Matcha Ice Latte</h5>
+                                            <span class="text-primary fw-bold">$4.75</span>
+                                        </div>
+                                        <p class="card-text">Capas de matcha, leche y puré de fresa natural crean una bebida visualmente atractiva y deliciosa.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Instagrameable</span>
+                                            <span class="badge bg-light text-primary">Frutal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="sin-cafe">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Bebidas/butterfly-pea.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Butterfly Pea Limonade">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Butterfly Pea Limonade</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Limonada con té de flor de mariposa que cambia de color al agregar limón. Una experiencia visual y refrescante.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Visual</span>
+                                            <span class="badge bg-light text-primary">Refrescante</span>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +688,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scripts personalizados -->
     <script>
-        
         // Filtrar items por categoría
         function filterItems(category) {
             const items = document.querySelectorAll('.menu-item');
@@ -196,7 +714,6 @@
         
         // Inicializar mapa cuando el DOM esté cargado
         document.addEventListener('DOMContentLoaded', function() {
-            
             
             // Animación para elementos al hacer scroll
             const animateOnScroll = () => {

@@ -62,7 +62,8 @@
                     <button class="category-btn active" onclick="filterItems('all')">Todos</button>
                     <button class="category-btn" onclick="filterItems('desayunos')">Desayunos</button>
                     <button class="category-btn" onclick="filterItems('sandwiches')">Sandwiches</button>
-                    <button class="category-btn" onclick="filterItems('Almuerzo')">Almuerzos</button>
+                    <button class="category-btn" onclick="filterItems('almuerzos')">Almuerzos</button>
+                    <button class="category-btn" onclick="filterItems('snacks')">Snacks</button>
                 </div>
 
                 <div class="row g-4" id="menu-items-container">
@@ -71,18 +72,18 @@
                         <div class="card h-100 card-hover-effect">
                             <div class="row g-0">
                                 <div class="col-md-5">
-                                    <img src="Imagenes/Almuerzos/POLLO.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Desayuno Americano">
+                                    <img src="Imagenes/Desayunos/panini.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Esgceptional Panini">
                                 </div>
                                 <div class="col-md-7">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <h5 class="card-title mb-0">Desayuno Americano</h5>
-                                            <span class="text-primary fw-bold">$5.50</span>
+                                            <h5 class="card-title mb-0">Esgceptional Panini</h5>
+                                            <span class="text-primary fw-bold">$6.00 - $6.50</span>
                                         </div>
-                                        <p class="card-text">Desayuno americano clásico con dos tostadas con queso americano derretido, huevos revueltos y frutas frescas. Una combinación perfecta de sabores reconfortantes y nutrientes esenciales para comenzar tu día con energía y vitalidad.</p>
+                                        <p class="card-text">Panini relleno de aguacate, torta de huevo, jamón, queso y lechuga acompañado de frutas frescas. Disponible en versión tostada o Bistro Parisien.</p>
                                         <div class="d-flex flex-wrap gap-2">
-                                            <span class="badge bg-light text-primary">Americano</span>
-                                            <span class="badge bg-light text-primary">Proteina</span>
+                                            <span class="badge bg-light text-primary">Completo</span>
+                                            <span class="badge bg-light text-primary">Frutas</span>
                                         </div>
                                     </div>
                                 </div>
@@ -90,15 +91,336 @@
                         </div>
                     </div>
 
-                    <!-- Más elementos de menú con la misma estructura -->
-                    <!-- Solo muestro uno como ejemplo, pero deberías incluir todos los elementos del menú original -->
-                    
-                    <!-- Almuerzos -->
-                    <div class="col-lg-6 menu-item" data-category="Almuerzo">
+                    <div class="col-lg-6 menu-item" data-category="desayunos">
                         <div class="card h-100 card-hover-effect">
                             <div class="row g-0">
                                 <div class="col-md-5">
-                                    <img src="Imagenes/Almuerzos/CHICHARRONES.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Chicharrones">
+                                    <img src="Imagenes/Desayunos/fruit.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Fruit Paradise">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Fruit Paradise</h5>
+                                            <span class="text-primary fw-bold">$4.50</span>
+                                        </div>
+                                        <p class="card-text">Copa de frutas frescas, granola crujiente, mermelada de fresa o miel dorada. Opción ligera y refrescante para comenzar el día.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Frutas</span>
+                                            <span class="badge bg-light text-primary">Ligero</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="desayunos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Desayunos/autentico.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Mañanas Auténticas">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Mañanas Auténticas</h5>
+                                            <span class="text-primary fw-bold">$5.50 - $7.00</span>
+                                        </div>
+                                        <p class="card-text">Frijoles refritos, huevos, crema, plátanos fritos, pan tostado. Desayuno tradicional lleno de sabor y energía.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Tradicional</span>
+                                            <span class="badge bg-light text-primary">Energético</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="desayunos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Desayunos/toast.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Toast Scramble">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Toast Scramble</h5>
+                                            <span class="text-primary fw-bold">$5.50</span>
+                                        </div>
+                                        <p class="card-text">Desayuno americano clásico con dos tostadas con queso americano derretido, huevos revueltos y frutas frescas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Americano</span>
+                                            <span class="badge bg-light text-primary">Proteína</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="desayunos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Desayunos/pancakes.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sunrise Pancakes">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Sunrise Pancakes</h5>
+                                            <span class="text-primary fw-bold">$6.00</span>
+                                        </div>
+                                        <p class="card-text">Esponjosos pancakes acompañados de una selección de frutas frescas y la opción de miel dorada o jarabe de arce.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Dulce</span>
+                                            <span class="badge bg-light text-primary">Frutas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sandwiches y Paninis -->
+                    <div class="col-lg-6 menu-item" data-category="sandwiches">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Sandwiches/pollo.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Panini de Pollo">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Panini de Pollo</h5>
+                                            <span class="text-primary fw-bold">$6.25</span>
+                                        </div>
+                                        <p class="card-text">Pechuga al BBQ, queso fundido, verduras frescas y mayonesa, servido en un pan crujiente y dorado acompañado con papas fritas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">BBQ</span>
+                                            <span class="badge bg-light text-primary">Crujiente</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="sandwiches">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Sandwiches/jamon.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Panini Jamón y Queso">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Panini Jamón y Queso</h5>
+                                            <span class="text-primary fw-bold">$6.00</span>
+                                        </div>
+                                        <p class="card-text">Rebanadas de jamón, queso fundido y verduras frescas en un pan crujiente dorado acompañado con papas fritas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                            <span class="badge bg-light text-primary">Queso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="sandwiches">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Sandwiches/res.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Panini de Res">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Panini de Res</h5>
+                                            <span class="text-primary fw-bold">$6.50</span>
+                                        </div>
+                                        <p class="card-text">Carne al BBQ, queso fundido, frescas verduras y mayonesa, en un crujiente pan dorado acompañado con papas fritas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">BBQ</span>
+                                            <span class="badge bg-light text-primary">Res</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="sandwiches">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Sandwiches/sandwich.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sandwich de Jamón">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Sandwich de Jamón</h5>
+                                            <span class="text-primary fw-bold">$5.00</span>
+                                        </div>
+                                        <p class="card-text">Jamón, queso derretido y verduras frescas en pan tierno y tostado acompañado con papas fritas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Simple</span>
+                                            <span class="badge bg-light text-primary">Clásico</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Snacks -->
+                    <div class="col-lg-6 menu-item" data-category="snacks">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Snacks/pizza.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Pizza Personal">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Pizza Personal</h5>
+                                            <span class="text-primary fw-bold">$4.00</span>
+                                        </div>
+                                        <p class="card-text">Base crujiente con jamón y queso mozzarella fundido. Ideal para un antojo rápido.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Rápido</span>
+                                            <span class="badge bg-light text-primary">Queso</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="snacks">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Snacks/alitas.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Alitas">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Alitas</h5>
+                                            <span class="text-primary fw-bold">$5.00 - $9.00</span>
+                                        </div>
+                                        <p class="card-text">Crujientes alitas servidas con aderezos ranch, BBQ o buffalo a tu elección.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Picante</span>
+                                            <span class="badge bg-light text-primary">Aperitivo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="snacks">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Snacks/nachos.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Nachos">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Nachos</h5>
+                                            <span class="text-primary fw-bold">$4.00 - $6.00</span>
+                                        </div>
+                                        <p class="card-text">Crujientes nachos acompañados de chili, queso y una suave crema.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Mexicano</span>
+                                            <span class="badge bg-light text-primary">Compartir</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="snacks">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Snacks/mix.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Mix de Snacks">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Mix de Snacks</h5>
+                                            <span class="text-primary fw-bold">$2.00 - $2.50</span>
+                                        </div>
+                                        <p class="card-text">Selección de snacks tradicionales o Mix Polos para acompañar tus bebidas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Acompañamiento</span>
+                                            <span class="badge bg-light text-primary">Variado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Almuerzos -->
+                    <div class="col-lg-6 menu-item" data-category="almuerzos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Almuerzos/pollo.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Pollo Asado">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Pollo Asado</h5>
+                                            <span class="text-primary fw-bold">$6.50</span>
+                                        </div>
+                                        <p class="card-text">1/2 Libra de pollo, puré de papa, verduras y 2 tortillas. Plato completo y balanceado.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Tradicional</span>
+                                            <span class="badge bg-light text-primary">Balanceado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="almuerzos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Almuerzos/res.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Lomo de Res">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <h5 class="card-title mb-0">Lomo de Res</h5>
+                                            <span class="text-primary fw-bold">$8.00</span>
+                                        </div>
+                                        <p class="card-text">1/2 Libra de Lomo de res, puré de papa, verduras al vapor y 2 tortillas.</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-light text-primary">Res</span>
+                                            <span class="badge bg-light text-primary">Premium</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item" data-category="almuerzos">
+                        <div class="card h-100 card-hover-effect">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="Imagenes/Almuerzos/chicharrones.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Chicharrones">
                                 </div>
                                 <div class="col-md-7">
                                     <div class="card-body">
@@ -106,7 +428,7 @@
                                             <h5 class="card-title mb-0">Chicharrones</h5>
                                             <span class="text-primary fw-bold">$8.00</span>
                                         </div>
-                                        <p class="card-text">1/2 Libra de Chicharrones de Cerdo, yuca sancochada, complementada con aguacate y 2 tortillas.</p>
+                                        <p class="card-text">1/2 libra de chicharrones, yuca sancochada, aguacate y 2 tortillas.</p>
                                         <div class="d-flex flex-wrap gap-2">
                                             <span class="badge bg-light text-primary">Típico</span>
                                             <span class="badge bg-light text-primary">Casero</span>
@@ -166,7 +488,6 @@
    
     <!-- Scripts personalizados -->
     <script>
-        
         // Filtrar items por categoría
         function filterItems(category) {
             const items = document.querySelectorAll('.menu-item');
@@ -193,7 +514,6 @@
         
         // Inicializar mapa cuando el DOM esté cargado
         document.addEventListener('DOMContentLoaded', function() {
-            
             
             // Animación para elementos al hacer scroll
             const animateOnScroll = () => {
